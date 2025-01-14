@@ -1,0 +1,14 @@
+name: CI
+on: workflow_dispatch
+jobs:
+  premierJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Premier Job
+        run: echo "Premier Job"
+
+      - name : LS
+        run: ls /
+        
+      - name: Fin Premier Job
+        run: echo "Fin Premier Job"
